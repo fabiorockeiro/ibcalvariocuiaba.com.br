@@ -756,6 +756,10 @@ p:last-child {
   object-position: center 55%;
 }
 
+.image-frame-members img {
+  object-position: center 42%;
+}
+
 .image-badge {
   position: absolute;
   z-index: 2;
@@ -1219,14 +1223,32 @@ p:last-child {
   gap: 22px;
 }
 
+.about-intro {
+  max-width: 860px;
+}
+
+.about-intro h2 {
+  margin-bottom: 24px;
+  color: var(--blue-950);
+}
+
+.about-intro p {
+  color: var(--muted);
+}
+
+.about-intro .button-row {
+  margin-top: 28px;
+}
+
 .history-gallery figure {
   margin: 0;
 }
 
 .history-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 }
